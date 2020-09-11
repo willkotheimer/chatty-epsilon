@@ -7,3 +7,30 @@ body {
   text-align: center;
   margin-top: 100px;
 }
+
+#messages {
+  width: 50%;
+  margin-top: 85px;
+}
+
+.card {
+  width: 70%;
+  margin-bottom: 2px;
+  border-bottom: 1px solid black;
+}
+
+
+.alert-secondary {
+    color: #383d41;
+    background-color: #e2e3e5;
+    border-color: #d6d8db;
+}
+.alert {
+    
+    padding: 0rem 1.25rem; 
+    margin-bottom: 0rem;
+}
+
+.btn-danger {
+  width: 100%;
+}
