@@ -16,7 +16,7 @@ const buildNavbar = () => {
             </div>
             <div class="form-check">
               <input type="checkbox" class="form-check-input" id="enlarge-text">
-              <label class="form-check-label" for="enlarge-text">Enlarge Text</label>
+              <label class="form-check-label" for="enlarge-text">Large Text</label>
             </div>
           </div>
         </form>
