@@ -20,7 +20,7 @@ const buildNavbar = () => {
             </div>
           </div>
         </form>
-        <button type="button">Clear Messages</button>
+        <button type="button" id="clear-btn">Clear Messages</button>
       </nav>
     `);
 };
