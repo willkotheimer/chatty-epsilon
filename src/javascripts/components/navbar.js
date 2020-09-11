@@ -4,7 +4,7 @@ const buildNavbar = () => {
         <a class="navbar-brand" href="#">
           <img src="../documentation/logo.jpg" class="border border-dark rounded" width="50" height="50" alt="Logo">
         </a>
-        <form>
+        <form class="w-50">
           <div class="form-group"
             <label for="messageInput">Message</label>
             <input type="text" class="form-control" id="messageInput" placeholder="message">
