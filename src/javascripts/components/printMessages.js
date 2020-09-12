@@ -1,6 +1,7 @@
 import DragonFlies from '../helpers/data/messageData';
 
 const printMessages = (array) => {
+  $('#messages').remove();
   let messages = '<div id="messages" class="float-right">';
   array.forEach((fly, index) => {
     messages += `
