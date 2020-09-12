@@ -34,3 +34,17 @@ body {
 .btn-danger {
   width: 100%;
 }
+
+.nameAndButton {
+  display: flex;
+  justify-content: space-between;
+}
+
+#name {
+  width:85%;
+}
+
+.delete {
+  width: 15%;
+  font-size: 7px;
+}
