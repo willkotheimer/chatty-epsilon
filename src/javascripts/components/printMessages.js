@@ -1,8 +1,8 @@
 import DragonFlies from '../helpers/data/messageData';
 
-const addmessages = () => {
+const printMessages = (array) => {
   let messages = '<div id="messages" class="float-right">';
-  DragonFlies.getDragonData().forEach((fly, index) => {
+  array.forEach((fly, index) => {
     messages += `
     <div class='card ${(index % 2 === 1) ? 'float-right' : 'float-left'}'>
     <div id='outerMessage-${index}'>
@@ -20,4 +20,4 @@ const addmessages = () => {
   $('#app').append(messages);
 };
 
-export default { addmessages };
+export default { printMessages };
