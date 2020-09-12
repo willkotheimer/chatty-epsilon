@@ -1,12 +1,14 @@
 import DragonFlies from '../helpers/data/messageData';
 
 const deleteDragon = (id) => {
+  DragonFlies.getDragonData().slice(parseInt(id, 10), parseInt(id, 10) + 1);
   $(`.card-${id}`).remove();
 };
 
 const printMessages = (array) => {
   $('#messages').remove();
-  let messages = '<div id="messages" class="float-right">';
+  let messages = '';
+  messages = '<div id="messages" class="float-right">';
   array.forEach((fly, index) => {
     messages += `
     <div class='card-${fly.dragonflyId}'>
