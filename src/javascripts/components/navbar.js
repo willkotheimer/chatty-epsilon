@@ -4,10 +4,10 @@ const buildNavbar = () => {
         <a class="navbar-brand" href="#">
           <img src="../documentation/logo.jpg" class="border border-dark rounded" width="50" height="50" alt="Logo">
         </a>
-        <form class="w-50">
+        <div class="w-50">
           <div class="form-group"
             <label for="messageInput">Message</label>
-            <input type="text" class="form-control" id="messageInput" placeholder="message">
+            <input type="text" class="form-control" id="messageInput" placeholder="message" required>
           </div>
           <div class="d-flex flex-row">
             <div class="form-check mr-5">
@@ -19,7 +19,7 @@ const buildNavbar = () => {
               <label class="form-check-label" for="enlarge-text">Large Text</label>
             </div>
           </div>
-        </form>
+        </div>
         <button type="button" id="clear-btn">Clear Messages</button>
       </nav>
     `);
