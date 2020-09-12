@@ -1,4 +1,5 @@
 import DragonFlies from '../helpers/data/messageData';
+import messageLimit from './messageLimit';
 
 const deleteDragon = (id) => {
   DragonFlies.getDragonData().slice(parseInt(id, 10), parseInt(id, 10) + 1);
@@ -6,10 +7,11 @@ const deleteDragon = (id) => {
 };
 
 const printMessages = (array) => {
+  const limit = messageLimit.twentyMessageLimit(array);
   $('#messages').remove();
   let messages = '';
   messages = '<div id="messages" class="float-right">';
-  array.forEach((fly, index) => {
+  limit.forEach((fly, index) => {
     messages += `
     <div class='card-${fly.dragonflyId}'>
       <div id='outerMessage-${index}'>
