@@ -5,6 +5,7 @@ import addMessage from './components/addMessage';
 import clearMessages from './components/clearButton';
 import font from './components/fontSize';
 import darkMode from './components/darkMode';
+
 import '../styles/main.scss';
 
 const init = () => {

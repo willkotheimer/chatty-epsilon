@@ -2,27 +2,27 @@ const DragonflyData = [
   {
     dragonflyId: 1,
     Message: 'Wow Im so glad they finally made a place to where I can talk to my peasants buzz buzz',
-    timestamp: '09/10/2020 @ 2:00am (UTC)'
+    timestamp: 'May 24 1993, 4:22 pm'
   },
   {
     dragonflyId: 2,
     Message: 'buzz buzz',
-    timestamp: '09/10/2020 @ 2:01am (UTC)'
+    timestamp: 'May 24 1993, 4:25 pm'
   },
   {
     dragonflyId: 3,
     Message: 'Wow Im so glad they finally made a place to where I can talk to my peasants buzz buzz',
-    timestamp: '09/10/2020 @ 2:03am (UTC)'
+    timestamp: 'May 24 1993, 5:22 pm'
   },
   {
     dragonflyId: 4,
     Message: 'Wow Im so glad they finally made a place to where I can talk to my peasants buzz buzz',
-    timestamp: '09/10/2020 @ 2:04am (UTC)'
+    timestamp: 'May 24 1993, 6:27 pm'
   },
   {
     dragonflyId: 5,
     Message: 'Wow Im so glad they finally made a place to where I can talk to my peasants buzz buzz',
-    timestamp: '09/10/2020 @ 2:05am (UTC)'
+    timestamp: 'May 24 1993, 9:30 pm'
   },
 ];
 
