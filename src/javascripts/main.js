@@ -1,3 +1,4 @@
+import DragonFlies from './helpers/data/messageData';
 import navbar from './components/navbar';
 import Printmessages from './components/printMessages';
 import clearMessages from './components/clearButton';
@@ -7,7 +8,7 @@ import '../styles/main.scss';
 
 const init = () => {
   navbar.buildNavbar();
-  Printmessages.addmessages();
+  Printmessages.printMessages(DragonFlies.getDragonData());
   $('#clear-btn').click(clearMessages);
   font.fontSizeToggle();
   darkMode.darkModeToggle();
