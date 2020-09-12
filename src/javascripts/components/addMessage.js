@@ -1,3 +1,4 @@
+import moment from 'moment';
 import printMessages from './printMessages';
 
 const addMessage = (messages) => {
@@ -6,7 +7,7 @@ const addMessage = (messages) => {
       messages.unshift({
         dragonflyId: 1,
         Message: $('#messageInput').val(),
-        timestamp: 'placeholder',
+        timestamp: moment().format('MMMM Do YYYY, h:mm a'),
       });
       $('#messageInput').val('');
       printMessages.printMessages(messages);
