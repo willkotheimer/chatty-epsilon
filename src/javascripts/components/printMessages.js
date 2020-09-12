@@ -9,7 +9,7 @@ const addmessages = () => {
       <div id='name' class='alert alert-secondary' role='alert'>${DragonFlies.findDragon(fly.dragonflyId).Name}</div>
       <div id='messageBlock'>
         <div id='message' class='alert alert-secondary' role='alert'>${fly.Message}</div>
-        <div id='message' class='alert alert-secondary' role='alert'>${fly.timestamp}</div>
+        <div id='message' class='alert alert-secondary' role='alert'></div>
       </div>
       <button type="button" id='delete-${fly.dragonflyId}' class="btn btn-danger">Delete</button>
       </div>
