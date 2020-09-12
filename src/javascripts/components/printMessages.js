@@ -1,7 +1,6 @@
 import DragonFlies from '../helpers/data/messageData';
 
 const deleteDragon = (id) => {
-  console.warn(id);
   $(`.card-${id}`).remove();
 };
 
@@ -13,7 +12,8 @@ const printMessages = (array) => {
     <div class='card-${fly.dragonflyId}'>
       <div id='outerMessage-${index}'>
       <div class='nameAndButton'>
-        <div id='name' class='alert alert-secondary' role='alert'>${DragonFlies.findDragon(fly.dragonflyId).Name}</div> <button type="button" id='${fly.dragonflyId}' class="delete btn btn-danger">Delete</button>
+        <div id='name' class='alert alert-secondary' role='alert'>${DragonFlies.findDragon(fly.dragonflyId).Name}</div> 
+        <button type="button" id='${fly.dragonflyId}' class="delete btn btn-danger">Delete</button>
       </div>
           <div id='messageBlock'>
             <div id='message' class='alert alert-secondary' role='alert'>${fly.Message}</div>
