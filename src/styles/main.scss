@@ -8,6 +8,17 @@ body {
   margin-top: 100px;
 }
 
+.nav-input {
+  width: 100%;
+}
+
+#inputMessager {
+  width: 50%;
+}
+
+label {
+  padding-right:10px;
+}
 #messages {
   width: 50%;
   margin-top: 85px;
@@ -42,6 +53,7 @@ body {
 
 #name {
   width:85%;
+  font-weight: bold;
 }
 
 .delete {

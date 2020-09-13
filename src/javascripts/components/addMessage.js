@@ -5,11 +5,12 @@ const addMessage = (messages) => {
   $('#messageInput').on('keypress', (e) => {
     if (e.which === 13) {
       messages.unshift({
-        dragonflyId: 1,
+        dragonflyId: parseInt($('#inputMessager option:selected').attr('name'), 10),
         Message: $('#messageInput').val(),
         timestamp: moment().format('MMMM Do YYYY, h:mm a'),
       });
       $('#messageInput').val('');
+      console.warn(messages);
       printMessages.printMessages(messages);
     }
   });
