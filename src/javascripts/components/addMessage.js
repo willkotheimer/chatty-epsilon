@@ -10,7 +10,6 @@ const addMessage = (messages) => {
         timestamp: moment().format('MMMM Do YYYY, h:mm a'),
       });
       $('#messageInput').val('');
-      console.warn(messages);
       printMessages.printMessages(messages);
     }
   });
