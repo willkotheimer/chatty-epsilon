@@ -1,9 +1,8 @@
 import DragonFlies from '../helpers/data/messageData';
-import Helpers from '../helpers/data/dataHelpers';
 import messageLimit from './messageLimit';
 
 const deleteDragon = (id) => {
-  Helpers.getDeleted().push(parseInt(id, 10));
+  DragonFlies.getDragonData().splice(parseInt(id, 10), 1);
   $(`.card-${id}`).remove();
 };
 
@@ -13,7 +12,6 @@ const printMessages = (array) => {
   let messages = '';
   messages = '<div id="messages" class="float-right">';
   limit.forEach((fly, index) => {
-    if (Helpers.getDeleted().indexOf(index) !== -1) { return; }
     messages += `
     <div class='card-${fly.dragonflyId}'>
       <div id='outerMessage-${index}'>
