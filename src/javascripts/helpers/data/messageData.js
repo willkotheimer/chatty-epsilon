@@ -56,7 +56,6 @@ const dragonFlies = [
 
 const getDragonFlies = () => dragonFlies;
 const getDragonData = () => DragonflyData;
-
 const findDragon = (index) => dragonFlies.find((o) => o.dragonflyId === index);
 
 export default { getDragonData, getDragonFlies, findDragon };
