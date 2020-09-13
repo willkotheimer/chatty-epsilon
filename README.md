@@ -1,79 +1,29 @@
-# Webpack Intro
+# About
 
-[See Live Demo](https://webpack-temp.netlify.app/)
+Chatty is a one page application to chat and communicate with your friends! Choose your user through a series of dragonflies and you can get to chatting! There is also a dark mode to use if you are in a dark room or need to give your eyes a well-deserved rest. Timestamps are also available to see who posted last and when the post was submitted. 
 
-Webpack is a task runner and a module bundler. It originally started as a module bundler. This means that it takes all of your separate Javascript modules and bundles them together into a single file. Webpack also automates some of the tasks that we have to run every time we change the code. It will automate these tasks so that we are not typing in the same commands every single time.
+# Project Status: Working/Prototype
 
-Visit the [Webpack documentation](https://webpack.js.org/concepts/) if you want to explore more.
+## Installation
 
-## Get Started
+1. Clone the repo like you usually would.
+2. In the command line, run "npm i -S install" in order to run moment (for the timestamps).
 
-### Use Template
-#### To get started, click the GREEN "Use this Template" button at the top of the repo
-![Use this Template](./documentation/usetemplate.png)
+### Other Important Tidbits
 
-#### Make sure YOUR github account is selected in the dropdown and name your project
-![Create Project](./documentation/createproject.png)
+# Technologies used
 
-- Clone your new repo to your local machine
-- Start working!
+Sass, CSS, HTML, JQuery, Javascript, ESLint, Moment. 
 
-### Starting the Project
-1. Open the `package.json` file and change the `name` property to the name of your application, and `author` to  your name.
-1. From your command line, be in the root directory and run `npm install` OR `npm i` for short.
-1. To start your application, run `npm start`
 
-### If you see this, you are set to go!
-![LIT](./documentation/lit-screen.png)
+# Inspirations
 
-**NOTE:** Changes you make to the project will make the browser reload on save...no more hard refresh unless something goes wrong.
+This was our second large project for NSS evening cohort 13. Our task was to create a one page chat app with a team of 4 people. As a group, we chose the theme of our chat application (dragonflies) and how to implement our user interface tickets. As a group, we wanted to create a unique chatting application for our users that would allow them to choose their own identity to past as. 
 
-## Other Important Tidbits
-### Console messages
-From this time forward, you will be expected to have a clean console in order for your assignments to be approved. This means that the use of `console.log` is acceptable **_(debugger is WAY better though)_** while developing, but will throw a warning in your console like the image below, but all `logs` will have to be removed. You may use `console.error` and `console.warn` in your code however.
+# Pictures
 
-![not acceptable](./documentation/notacceptable.png)
+Soon to come
 
-### Including Images with Webpack
-If you have a folder of local images that you want to load into your code things get a little strange with webpack.  Remember the only way webpack knows about assets is if they are imported into your javascript files.  Even our CSS is not added until those files are imported into our javascript files.  Below is some sample code for how to load a local image file into your project
+# Netlify Deploy
 
-```js
-import cat from './assets/cat.jpg';
-
-let domString = `<img src=${cat} alt="picture of a cat"/>`;
-
-document.getElementById('cat').innerHTMl = domString;
-```
-
-### Importing CSS/SCSS
-```js
-import '../styles/main.scss';
-
-const init = () => {
-  $('#app').html('<h1>HELLO! You are up and running!</h1>');
-  console.log('YOU ARE UP AND RUNNING!');
-};
-
-init();
-```
-
-### Using Axios
-> For every file you will need to make an XHR request in, you will need to require Axios
-```js
-import axios from 'axios';
-
-const examplePromise = () => {
-  axios.get('http://localhost:3001/example')
-    .then((data) => {
-      console.warn(data);
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-});
-```
-
-### Deploying on Netlify
-
-- Build Command: `npm run build`
-- Publish directory: `build`
+Soon to come
