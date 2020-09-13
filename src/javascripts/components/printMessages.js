@@ -2,7 +2,7 @@ import DragonFlies from '../helpers/data/messageData';
 import messageLimit from './messageLimit';
 
 const deleteDragon = (id) => {
-  DragonFlies.getDragonData().slice(parseInt(id, 10), parseInt(id, 10) + 1);
+  DragonFlies.getDragonData().splice(parseInt(id, 10), 1);
   $(`.card-${id}`).remove();
 };
 
