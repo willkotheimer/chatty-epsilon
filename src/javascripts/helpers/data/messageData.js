@@ -1,28 +1,40 @@
 const DragonflyData = [
   {
+    messageId: 0,
     dragonflyId: 0,
     Message: 'Wow Im so glad they finally made a place to where I can talk to my peasants buzz buzz',
-    timestamp: 'May 24 1993, 4:22 pm'
+    prettytimestamp: 'May 24 1993, 4:22 pm',
+    timestamp: 1600133129920
   },
   {
+    messageId: 1,
     dragonflyId: 1,
     Message: 'Dont talk to them like that buzz buzz',
-    timestamp: 'May 24 1993, 4:25 pm'
+    prettytimestamp: 'May 24 1993, 4:25 pm',
+    timestamp: 1600133129917
+
   },
   {
+    messageId: 2,
     dragonflyId: 2,
     Message: 'Some King, he doesnt even have a crown. BUZZ BUZZ',
-    timestamp: 'May 24 1993, 5:22 pm'
+    prettytimestamp: 'May 24 1993, 5:22 pm',
+    timestamp: 1600133088204
   },
   {
+    messageId: 3,
     dragonflyId: 3,
     Message: 'Wow @peasant1 I dont think you can say that.... buzz buzz.',
-    timestamp: 'May 24 1993, 6:27 pm'
+    prettytimestamp: 'May 24 1993, 6:27 pm',
+    timestamp: 600133000336
+
   },
   {
+    messageId: 4,
     dragonflyId: 4,
     Message: 'Im scared can I remove myself from this chat?.....buzz buzz..... please.. buzz buzz.',
-    timestamp: 'May 24 1993, 9:30 pm'
+    prettytimestamp: 'May 24 1993, 9:30 pm',
+    timestamp: 1600133000003
   },
 ];
 
@@ -56,6 +68,5 @@ const dragonFlies = [
 
 const getDragonFlies = () => dragonFlies;
 const getDragonData = () => DragonflyData;
-const findDragon = (index) => dragonFlies.find((o) => o.dragonflyId === index);
 
-export default { getDragonData, getDragonFlies, findDragon };
+export default { getDragonData, getDragonFlies };
