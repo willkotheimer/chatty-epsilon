@@ -14,10 +14,10 @@ const printMessages = (array) => {
   const newArray = sortByLatestDate(limit);
   $('#messages').remove();
   let messages = '';
-  messages = '<div id="messages" class="float-right">';
+  messages = '<div id="messages" class="container">';
   newArray.forEach((fly, index) => {
     messages += `
-    <div class='card-${fly.timestamp}'>
+    <div class='card-${fly.timestamp} d-flex justify-content-between ml-auto p-2'>
       <div id='outerMessage-${index}'>
       <div class='nameAndButton'>
         <div id='name' class='alert alert-secondary' role='alert'>${findFunctions.findDragon(fly.dragonflyId).Name}</div> 

@@ -3,7 +3,7 @@
 
 body {
   background-color: antiquewhite;
-  color: brown;
+  color: black;
   text-align: center;
   margin-top: 100px;
 }
@@ -20,6 +20,8 @@ label {
   padding-right:10px;
 }
 #messages {
+  display: flex;
+  flex-direction: column;
   width: 50%;
   margin-top: 85px;
 }
@@ -33,8 +35,8 @@ label {
 
 .alert-secondary {
     color: #383d41;
-    background-color: #e2e3e5;
-    border-color: #d6d8db;
+    background-color: #F5DC92;
+    border-color: #B4A29F;
 }
 .alert {
     
@@ -61,7 +63,21 @@ label {
   font-size: 7px;
 }
 
-.btn {
-  display: flex;
-  align-items: flex-start;
+// .btn {
+//   display: flex;
+//   align-items: flex-start;
+// }
+
+.navbar-custom {
+  background-color: #6B5949;
+ }
+
+ .container {
+ display: flex;
 }
+
+.clear.btn {
+  background-color: #B4A29F;
+}
+
+ 
