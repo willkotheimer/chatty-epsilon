@@ -28,11 +28,7 @@ const buildNavbar = () => {
               <label for="messageInput">Message</label>
             <input type="text" class="form-control" id="messageInput" placeholder="message" required>
             </div>
-
           </div>
-
-
-            
       
           <div class="d-flex flex-row">
             <div class="form-check mr-5">
