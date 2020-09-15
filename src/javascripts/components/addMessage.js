@@ -5,10 +5,14 @@ import printMessages from './printMessages';
 const addMessage = (messages) => {
   $('#messageInput').on('keypress', (e) => {
     if (e.which === 13) {
-      messages.unshift({
+      const index = messages.length + 1;
+      console.warn(index);
+      messages.push({
+        messageId: index + 1,
         dragonflyId: parseInt($('#inputMessager option:selected').attr('name'), 10),
         Message: emojis.unicode($('#messageInput').val()),
-        timestamp: moment().format('MMMM Do YYYY, h:mm a'),
+        prettytimestamp: moment().format('MMMM Do YYYY, h:mm a'),
+        timestamp: moment().toDate().getTime()
       });
       $('#messageInput').val('');
       printMessages.printMessages(messages);
