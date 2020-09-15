@@ -5,6 +5,7 @@ import addMessage from './components/addMessage';
 import clearMessages from './components/clearButton';
 import font from './components/fontSize';
 import darkMode from './components/darkMode';
+import themes from './components/userTheme';
 
 import '../styles/main.scss';
 
@@ -15,6 +16,7 @@ const init = () => {
   $('#clear-btn').click(clearMessages);
   font.fontSizeToggle();
   darkMode.darkModeToggle();
+  themes.changeTheme();
 };
 
 init();
