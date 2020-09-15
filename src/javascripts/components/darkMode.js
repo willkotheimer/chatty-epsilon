@@ -5,7 +5,7 @@ const darkModeToggle = () => {
       $('body').css('color', 'white');
     } else {
       $('body').css('background-color', 'antiquewhite');
-      $('body').css('color', 'brown');
+      $('body').css('color', 'black');
     }
   });
 };
