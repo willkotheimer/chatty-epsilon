@@ -14,11 +14,10 @@ const dropDown = () => {
 const buildNavbar = () => {
   $('#app').append(`
       <nav class="navbar fixed-top navbar-custom">
-      
         <a class="navbar-brand" href="#">
           <img src="../documentation/logo.jpg" class="border border-dark rounded" width="50" height="50" alt="Logo">
         </a>
-
+        <header><h1 class='title'>Chatty the chat app</h1></header>
         <button
         type="button"
         class="change-color btn btn-primary"

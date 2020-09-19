@@ -1,11 +1,26 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@font-face {
+  font-family: retro-woodcutter;
+  color: #90EE90;
+  src: url('../fonts/Retro\ Computer.otf') format('opentype');
+}
+@font-face {
+  font-family: retro-computer;
+  src: url('../fonts/RetroComputer_DEMO.ttf') format('truetype');
+}
 
 body {
-  background-color: antiquewhite;
-  color: black;
+  background-color: /*#243133;*/ #dee4e7;
+  color: white;
   text-align: center;
   margin-top: 100px;
+  font-family: retro-computer;
+
+}
+
+.title {
+  font-family: retro-woodcutter;
 }
 
 .nav-input {
@@ -34,8 +49,8 @@ label {
 
 
 .alert-secondary {
-    color: #383d41;
-    background-color: #F5DC92;
+    color: #41FF00;
+    background-color: #383d41;
     border-color: #B4A29F;
 }
 .alert {
@@ -64,7 +79,7 @@ label {
 }
 
 .navbar-custom {
-  background-color: #6B5949;
+  background-color: #41FF00;
   box-shadow: 5px 5px rgb(155, 155, 236);
  }
 
